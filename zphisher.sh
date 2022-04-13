@@ -153,16 +153,16 @@ kill_pid() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE}
-        ${ORANGE}██╗░░██╗██████╗░░█████╗░██████╗░██╗
-        ${ORANGE}╚██╗██╔╝██╔══██╗██╔══██╗██╔══██╗██║
-        ${ORANGE}░╚███╔╝░██████╦╝██║░░██║██████╔╝██║
-        ${ORANGE}░██╔██╗░██╔══██╗██║░░██║██╔══██╗██║
-        ${ORANGE}██╔╝╚██╗██████╦╝╚█████╔╝██║░░██║██║
-        ${ORANGE}╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝              ${RED}Version : 2.2
+		${GREEN}
+		${GREEN}
+        ${GREEN}██╗░░██╗██████╗░░█████╗░██████╗░██╗
+        ${GREEN}╚██╗██╔╝██╔══██╗██╔══██╗██╔══██╗██║
+        ${GREEN}░╚███╔╝░██████╦╝██║░░██║██████╔╝██║
+        ${GREEN}░██╔██╗░██╔══██╗██║░░██║██╔══██╗██║
+        ${GREEN}██╔╝╚██╗██████╦╝╚█████╔╝██║░░██║██║
+        ${GREEN}╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝              ${RED}Version : 2.2
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${WHITE}[${WHITE}-${GREEN}]${CYAN} Xbori tərəfindən yaradılmışdır (Telegram -@Xbori3)${WHITE}
 	EOF
 }
 
@@ -170,18 +170,18 @@ banner() {
 banner_small() {
 	cat <<- EOF
 		${BLUE}
-		${BLUE}  ┏━┓┏━┳┓
-        ${BLUE}  ┗┓┗┛┏┫┃
-        ${BLUE}  ╋┗┓┏┛┃┗━┳━━┳━┳┓
-        ${BLUE}  ╋┏┛┗┓┃┏┓┃┏┓┃┏╋┫
-        ${BLUE}  ┏┛┏┓┗┫┗┛┃┗┛┃┃┃┃
-        ${BLUE}  ┗━┛┗━┻━━┻━━┻┛┗┛${WHITE} 2.2
+		${BLUE}██╗░░██╗██████╗░░█████╗░██████╗░██╗
+        ${BLUE}╚██╗██╔╝██╔══██╗██╔══██╗██╔══██╗██║
+        ${BLUE}░╚███╔╝░██████╦╝██║░░██║██████╔╝██║
+        ${BLUE}░██╔██╗░██╔══██╗██║░░██║██╔══██╗██║
+        ${BLUE}██╔╝╚██╗██████╦╝╚█████╔╝██║░░██║██║
+        ${BLUE}╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝${WHITE} 2.2
 	EOF
 }
 
 ## Dependencies
 dependencies() {
-	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
+	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Tələb olunan paketlər quraşdırılır..."
 
     if [[ -d "/data/data/com.termux/files/home" ]]; then
         if [[ `command -v proot` ]]; then
